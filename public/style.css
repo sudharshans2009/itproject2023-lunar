@@ -1,0 +1,254 @@
+.pages,
+html {
+    height: 100%;
+}
+.pages,
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+.login.page .form,
+.page {
+    position: absolute;
+    width: 100%;
+}
+.message.typing .messageBody,
+body,
+html {
+    color: #000;
+}
+.enter,
+.voice {
+    appearance: none;
+    text-decoration: none;
+    transition: background 0.5s;
+    display: flex;
+}
+.login.page,
+header {
+    background-color: #fff;
+}
+.page,
+.pages,
+header {
+    width: 100%;
+}
+.enter,
+.voice,
+header {
+    display: flex;
+}
+*,
+header {
+    box-sizing: border-box;
+}
+html {
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+}
+a,
+html,
+input,
+textarea {
+    font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+textarea {
+    resize: vertical;
+    max-height: 200px;
+    min-height: 60px;
+}
+a {
+    text-decoration: none !important;
+}
+span > p > img {
+    min-width: 50px;
+    min-height: 50px;
+}
+body,
+html {
+    background: #fff;
+}
+body {
+    height: calc(100% - 75px);
+    margin-top: 75px !important;
+}
+ul {
+    list-style: none;
+    word-wrap: break-word;
+}
+.page {
+    height: calc(100% - 75px);
+}
+.login.page .form {
+    height: 100px;
+    margin-top: -100px;
+    text-align: center;
+    top: 50%;
+}
+.login.page .form .usernameInput {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: 0;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 400px;
+}
+.login.page .title {
+    font-size: 200%;
+}
+.login.page .usernameInput {
+    font-size: 200%;
+    letter-spacing: 3px;
+}
+.login.page .title,
+.login.page .usernameInput {
+    color: #000;
+    font-weight: 100;
+}
+.chat.page {
+    display: none;
+}
+.messages {
+    font-size: 150%;
+}
+.inputMessage {
+    font-size: 100%;
+}
+.log {
+    color: #292929;
+    font-size: 70%;
+    margin: 5px;
+    text-align: center;
+}
+.chatArea {
+    height: 100%;
+    padding-bottom: 60px;
+}
+.messages {
+    height: 100%;
+    margin: 0;
+    overflow-y: auto;
+    padding: 10px 20px;
+}
+.message {
+    width: fit-content;
+    padding-inline: 10px;
+    border-radius: 5px;
+    position: relative;
+    margin: 10px 10px 10px 30px;
+    max-width: 750px;
+  color: #fff !important;
+  box-shadow: #383838 1px 1px 35px -7px
+}
+.avatar,
+.avatar-you,
+.message::before {
+    position: absolute;
+    border-radius: 5px;
+}
+.message[user="(you)"] {
+    margin-left: auto;
+    margin-right: 30px;
+}
+.message::before {
+    content: attr(tooltip-text);
+    display: inline-block;
+    color: #000;
+    padding: 3px;
+    overflow: hidden;
+    pointer-events: none;
+    font-size: 0.7rem;
+    z-index: 9999999;
+    width: max-content;
+    bottom: -23px;
+    left: 0;
+}
+.message:hover::before {
+    opacity: 1;
+}
+.message[user="(you)"]::before {
+    right: 0;
+    left: auto;
+}
+.username {
+    font-weight: 700;
+    overflow: hidden;
+    padding-right: 15px;
+    text-align: right;
+}
+.avatar {
+    width: 30px;
+    height: 30px;
+    left: -40px;
+    top: -1px !important;
+}
+.avatar-you {
+    width: 28px;
+    height: 28px;
+    right: -40px;
+    top: 0 !important;
+  border: 1px solid #000;
+}
+.enter,
+.inputMessage {
+    border: 1px solid #000;
+    bottom: 0;
+    height: 60px;
+    background: #fff;
+    color: #000;
+    position: fixed;
+}
+.inputMessage {
+    left: 0;
+    right: 160px;
+    outline: 0;
+    padding-left: 10px;
+    width: calc(100% - 160px);
+    border-left: 0 solid #000 !important;
+}
+.enter {
+    right: 0;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    border-inline: #000 0px solid !important;
+}
+.voice {
+    position: fixed;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #000;
+    border-left: 0 solid #000;
+    color: #000;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    right: 100px;
+}
+.enter:hover,
+.voice:hover {
+    cursor: pointer;
+    background: #737373;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+header {
+  height: 75px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 15px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+  color: #fff;
+  background: radial-gradient(circle at 0% 0%, #f600f3, #c900fe, #a136ff, #5142f0, #0033d9);
+}

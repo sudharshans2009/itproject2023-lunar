@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Lunar - Chatbot</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/chat.png" />
+  </head>
+  <body>
+    <header>
+      <h1>Lunar - AI Copilot</h1>
+      <h3>Socket.io Chat</h3>
+    </header>
+    <ul class="pages">
+      <li class="chat page">
+        <div class="chatArea"><ul class="messages"></ul></div>
+        <textarea class="inputMessage" placeholder="Type here..."></textarea
+        ><button class="voice" data-active="false">
+          <img src="assets/mic_off.svg" alt="mic" />
+        </button>
+        <div class="enter">Send</div>
+      </li>
+      <li class="login page">
+        <div class="form">
+          <h3 class="title">What's your nickname?</h3>
+          <input class="usernameInput" maxlength="14" />
+        </div>
+      </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"
+      integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
