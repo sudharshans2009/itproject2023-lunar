@@ -3,7 +3,7 @@ $(function() {
   const FADE_TIME = 150;
   const TYPING_TIMER_LENGTH = 400;
   const COLORS = ['#19c37d', '#91580f', '#f8a700', '#f78b00', '#58dc00', '#287b00', '#a8f07a', '#4ae8c4', '#3b88eb', '#3824aa', '#a700ff', '#d300e7'];
-  const API_KEY = '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';
+  const API_KEY = 'YOUR API KEY';
   // DOM Elements
   const $window = $(window);
   const $usernameInput = $('.usernameInput');
